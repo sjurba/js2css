@@ -1,21 +1,21 @@
 {
-  "name": "js2css",
-  "version": "0.1.0",
-  "description": "JS CSS Pre-processor",
-  "main": "lib/js3.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "js",
-    "css",
-    "preprocessor"
-  ],
-  "author": "Sjur Bakka",
-  "license": "ISC",
-  "devDependencies": {
-    "chai": "^2.3.0",
-    "karma-mocha": "^0.1.10",
-    "mocha": "^2.2.5"
-  }
+    "name": "js2css",
+    "version": "0.1.0",
+    "description": "JS CSS Pre-processor",
+    "main": "lib/js3.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [
+        "js",
+        "css",
+        "preprocessor"
+    ],
+    "author": "Sjur Bakka",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^2.3.0",
+        "karma-mocha": "^0.1.10",
+        "mocha": "^2.2.5"
+    }
 }
