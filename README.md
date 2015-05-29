@@ -1,5 +1,5 @@
 # js2css
-Use plain JavaScript to write your CSS. 
+Use plain JavaScript to write your CSS. Build status: (Coming soon)
 
 ## Disclaimer
 Inspired by the [JS CSS](http://2015.jsconf.us/speakers.html#pourkhomami) talk at [JSConf 2015](http://2015.jsconf.us/), this POC was thrown together in a few hours between sessions.
