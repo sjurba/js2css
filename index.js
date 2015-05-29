@@ -38,3 +38,39 @@ console.log(js3({
         }
     }
 }));
+
+console.log(js3({
+    body: {
+        color: ['red', 'blue']
+    }
+}));
+
+console.log(js3([{
+    body: {
+        color: ['red', 'blue', 123]
+    }
+}, {
+    styles: {
+        body: {
+            sjurba: 123
+        }
+    },
+    plugins: {
+        sjurba: function (val) {
+            return {
+                color: val
+            };
+        }
+    }
+}]));
+
+console.log(js3({
+    body: {
+        '&.div': {
+            color: 'red'
+        },
+        '&:div': {
+            color: 'red'
+        }
+    }
+}));
