@@ -2,7 +2,7 @@
     "name": "js2css",
     "version": "0.1.0",
     "description": "JS CSS Pre-processor",
-    "main": "lib/js3.js",
+    "main": "lib/js2css.js",
     "scripts": {
         "test": "mocha"
     },
