@@ -1,36 +1,36 @@
 'use strict';
-var js3 = require('./lib/js3.js');
+var js2css = require('./lib/js2css.js');
 
 var styles = require('./test.css.js');
 
-console.log(js3(styles));
+console.log(js2css(styles));
 
 var styles2 = require('./test2.css.js');
 
-console.log(js3(styles2));
+console.log(js2css(styles2));
 
 
 
-js3.plugins.sjurba = function (val) {
+js2css.mixins.sjurba = function (val) {
     return {
         color: 'sjurba ' + val
     };
 };
 
-console.log(js3({
+console.log(js2css({
     body: {
         sjurba: 123
     }
 }));
 
 
-console.log(js3({
+console.log(js2css({
     styles: {
         body: {
             sjurba: 123
         }
     },
-    plugins: {
+    mixins: {
         sjurba: function (val) {
             return {
                 color: 'Gabe ' + val
@@ -39,13 +39,19 @@ console.log(js3({
     }
 }));
 
-console.log(js3({
+console.log(js2css({
     body: {
         color: ['red', 'blue']
     }
 }));
 
-console.log(js3([{
+console.log(js2css({
+    body: {
+        color: 'red'
+    }
+}));
+
+console.log(js2css([{
     body: {
         color: ['red', 'blue', 123]
     }
@@ -55,7 +61,7 @@ console.log(js3([{
             sjurba: 123
         }
     },
-    plugins: {
+    mixins: {
         sjurba: function (val) {
             return {
                 color: val
@@ -64,7 +70,7 @@ console.log(js3([{
     }
 }]));
 
-console.log(js3({
+console.log(js2css({
     body: {
         '&.div': {
             color: 'red'

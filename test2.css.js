@@ -30,7 +30,7 @@ var style = {
 
 module.exports = {
     styles: style,
-    plugins: {
+    mixins: {
         coolPadz: coolPadz
     }
 };
